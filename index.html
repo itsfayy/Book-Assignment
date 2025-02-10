@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Heaven | Online Bookstore</title>
+    
+    <style>
+      
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('https://cdn.pixabay.com/photo/2019/11/19/22/24/watch-4638673_640.jpg');
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(30, 0, 8, 0.85);
+            padding: 15px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-header h1 {
+            font-size: 32px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+       
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+
+        .header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+      
+
+        .header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: rgba(36, 0, 8, 0.9);
+            color: white;
+            padding: 12px 24px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+           
+        }
+
+        .cta-btn:hover {
+            background: #7a021b;
+        }
+
+       
+        .book-section {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px 0;
+        }
+
+        .book-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .book-card {
+            width: 280px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .book-card h3 {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        .book-card .price {
+            color: #ffd700;
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+
+        .contact-section {
+            background: rgba(36, 0, 8, 0.85);
+            padding: 30px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .contact-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+        }
+
+    
+        footer {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+   
+    <header class="main-header">
+        <h1>Read Heaven</h1>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+   
+    <section class="header" id="home">
+        <h2>Step Into a World of Stories at Read Heaven</span></h2>
+        <p>Immerse yourself in a paradise of books, where each page unfolds a new adventure.</p>
+        <a href="#books" class="cta-btn">Explore Books</a>
+    </section>
+
+
+    <section class="book-section" id="books">
+        <h2>Available Books</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="https://i.pinimg.com/736x/f2/17/4d/f2174d7d1cd2dba36c65d794baf5ad51.jpg" alt="It Ends With Us">
+                <h3>It Ends With Us</h3>
+                <p class="price">Ksh 1500</p>
+            </div>
+            <div class="book-card">
+                <img src="https://i.pinimg.com/236x/c4/d4/70/c4d4705a66338754b00289868d73da24.jpg" alt="November 9">
+                <h3>November 9</h3>
+                <p class="price">Ksh 1200</p>
+            </div>
+              <div class="book-card">
+                <img src="https://i.pinimg.com/474x/01/94/64/01946435efff4dd1082a704d7358fe4d.jpg" alt="Bell Jar">
+                <h3>Bell Jar</h3>
+                <p class="price">1400 Ksh</p>
+                <p class="book-description"></p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:readheavenreads.com">readheavenreads.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">0765782567</a></p>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2025 ReadHeaven Reads.</p>
+    </footer>
+</body>
+</html>
